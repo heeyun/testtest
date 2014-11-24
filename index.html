@@ -9,11 +9,26 @@
  <title>index</title>
   <script>
   
-function getValue(){
+ function getValue(){
       var y=document.getElementById("myHeader");
         if(y.innerHTML == "Click me!")
       y.innerHTML="반짝반짝 빛나는 칠공주가 떳다!";
     }
+  var ary = new Array();
+ary.push('sunnyposter/1.jpg');
+ary.push('sunnyposter/2.jpg');
+ary.push('sunnyposter/3.jpg');
+ary.push('sunnyposter/4.jpg');
+ary.push('sunnyposter/5.jpg');
+ary.push('sunnyposter/6.jpg');
+ary.push('sunnyposter/7.jpg');
+ary.push('sunnyposter/8.jpg');
+ary.push('sunnyposter/9.jpg');
+ary.push('sunnyposter/10.jpg');
+window.onload = function()
+{
+document.body.style.backgroundImage = 'url('+ary[Math.floor(Math.random()*ary.length)]+')';
+}
   </script>
 </head>
 
