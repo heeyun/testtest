@@ -8,10 +8,11 @@
  
   <script>
   
- window.onload = function() {
-	var d = new Date();
-	var h = d.getHours();
-	if (h<18)
+  function getValue(){
+      var y=document.getElementById("myHeader");
+        if(y.innerHTML == "Click me!")
+      y.innerHTML=" 신비로운 우주 여행!";
+    }
   </script>
 
 
@@ -20,19 +21,28 @@
      text-align:center;
      font-style:'MalgunGothic';
      font-size: 3em;
-    margin:70px 0px 40px 80px;
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 40em;
+     line-height: 130%;
   }
     
     h2{color:gray;
       text-align:center;
       font-size: 1.5em;
-      margin:800px 0px 40px 80px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 40em;
+      line-height: 3500%;
       
     }
      p{color:white;
       text-align:center;
       font-size: 0.9em;
-       margin:0px 0px 10px 80px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 40em;
+      line-height: 500%;
      }
    body {
     background-image: url(http://www.freeapplewallpapers.com/wp-content/uploads/2014/02/Interstellar-Movie.jpg);
