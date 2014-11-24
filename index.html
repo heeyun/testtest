@@ -8,17 +8,12 @@
 <head>
  <title>index</title>
   <script>
-function setup() {
-  createCanvas(640, 480);
-}
-function draw() {
-  if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 40, 40);
-}
+  
+function getValue(){
+      var y=document.getElementById("myHeader");
+        if(y.innerHTML == "Click me!")
+      y.innerHTML="반짝반짝 빛나는 칠공주가 떳다!";
+    }
   </script>
 </head>
 
